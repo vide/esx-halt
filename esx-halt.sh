@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# esx-halt.sh - Simple script to safely halt an ESXi host from ssh
+# Copyright (C) 2011  Davide Ferrari
+
 if [ $# -lt 1 ]
 then
   cat << EOF

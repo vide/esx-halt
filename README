@@ -1,0 +1,10 @@
+esx-halt.sh - Simple script to safely halt an ESXi host from ssh
+Copyright (C) 2011  Davide Ferrari
+
+esx-halt is a very simple bash script that, given an ESXi host as input,
+connects to it via SSH and shutdown (or power off) all the virtual
+machines inside it, and then safely halt the host.
+
+It could be useful if you want to shutdown the ESXi host from an UPS
+daemon (i.e. apcsupsd) and you cannot use the ESXi API calls due to
+license restrictions. 
